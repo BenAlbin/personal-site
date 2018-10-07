@@ -46,6 +46,7 @@
     </v-toolbar>
     <v-content>
       <HelloWorld/>
+      <SocialBar />
     </v-content>
     <v-navigation-drawer
       temporary
@@ -63,6 +64,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
+
     <v-footer :fixed="fixed" app>
       <span>&copy; 2017</span>
     </v-footer>
@@ -71,11 +73,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import SocialBar from './components/SocialBar'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    SocialBar
   },
   data () {
     return {
