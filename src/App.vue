@@ -45,8 +45,9 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
-      <SocialBar />
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -65,20 +66,31 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+    <v-footer height=auto dark app>
+      <v-layout
+        justify-center
+        row
+        wrap
+      >
+        <SocialBar>
+        </SocialBar>
+        <v-flex
+          text-xs-center
+          xs12
+        >
+          &copy; 2018
+        </v-flex>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import SocialBar from './components/SocialBar'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     SocialBar
   },
   data () {
