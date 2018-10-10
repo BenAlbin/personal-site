@@ -46,7 +46,6 @@
     </v-toolbar>
     <v-content>
       <v-container fluid>
-        <tech-tree></tech-tree>
         <router-view></router-view>
       </v-container>
     </v-content>

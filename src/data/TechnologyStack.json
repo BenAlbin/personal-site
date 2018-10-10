@@ -3,7 +3,7 @@
     "id": 100,
     "name": "Elixir",
     "logo_url": "",
-    "personal_note": "Incredibly exciting language to use. I was initially drawn to the language for the very terse but descriptive nature of functional languages. While I haven't personally had a need for the performance gains that Elixir can very easily provide, the productivity and Ruby on Rails influenced ease of development has been greatly appreciated.",
+    "personal_note": "Elixir is an incredibly exciting language to use. I was initially drawn to the language for the very terse but descriptive nature of functional languages. While I haven't personally had a need for the performance gains that Elixir can very easily provide, the productivity and Ruby on Rails influenced ease of development has been greatly appreciated.",
     "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
     "children": [
       {
@@ -36,7 +36,13 @@
     "personal_note": "",
     "description": "",
     "children": [
-
+      {
+        "id": 201,
+        "name": "Keras",
+        "logo_url": "",
+        "personal_note": "",
+        "description": ""
+      }
     ]
   }
 ]

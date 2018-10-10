@@ -1,9 +1,7 @@
-<template>
-  <tree-item
+<template lang="pug">
+  tree-item(
     class="item"
-    :model="techStackItems"
-  >
-  </tree-item>
+    :model="techStackItems")
 </template>
 
 <script>

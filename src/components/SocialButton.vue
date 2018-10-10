@@ -1,7 +1,6 @@
-<template>
-  <v-btn icon v-bind:href="socialUrl" target="_blank">
-    <i :class="['social-icon', 'fab', 'fa-'.concat(socialIcon)]"></i>
-  </v-btn>
+<template lang="pug">
+  v-btn(icon v-bind:href="socialUrl" target="_blank")
+    i.social-icon.fab(:class="'fa-'.concat(socialIcon)")
 </template>
 
 <script>
@@ -20,8 +19,7 @@ export default {
 }
 </script>
 
-<style>
-.social-icon {
-  font-size: 32px;
-}
+<style lang="stylus">
+.social-icon
+  font-size 32px
 </style>

@@ -1,14 +1,11 @@
-<template>
-  <v-card>
-    <v-card-actions>
-      <social-button
+<template lang="pug">
+  v-card
+    v-card-actions
+      social-button(
         v-for="(social, index) in $options.socials"
         v-bind:socialUrl="social.socialUrl"
         v-bind:socialIcon="social.socialIcon"
-        v-bind:key="index"
-      />
-    </v-card-actions>
-  </v-card>
+        v-bind:key="index")
 </template>
 
 <script>
