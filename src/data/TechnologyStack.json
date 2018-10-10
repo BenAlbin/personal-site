@@ -1,0 +1,42 @@
+[
+  {
+    "id": 100,
+    "name": "Elixir",
+    "logo_url": "",
+    "personal_note": "Incredibly exciting language to use. I was initially drawn to the language for the very terse but descriptive nature of functional languages. While I haven't personally had a need for the performance gains that Elixir can very easily provide, the productivity and Ruby on Rails influenced ease of development has been greatly appreciated.",
+    "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
+    "children": [
+      {
+        "id": 100,
+        "name": "Phoenix",
+        "logo_url": "",
+        "personal_note": "",
+        "description": "A productive web framework that does not compromise speed and maintainability."
+      },
+      {
+        "id": 101,
+        "name": "ExUnit",
+        "logo_url": "",
+        "personal_note": "",
+        "description": ""
+      },
+      {
+        "id": 102,
+        "name": "Absinthe",
+        "logo_url": "",
+        "personal_note": "",
+        "description": "GraphQL implementation for Elixir"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Python",
+    "logo_url": "",
+    "personal_note": "",
+    "description": "",
+    "children": [
+
+    ]
+  }
+]

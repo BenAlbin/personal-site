@@ -46,6 +46,7 @@
     </v-toolbar>
     <v-content>
       <v-container fluid>
+        <tech-tree></tech-tree>
         <router-view></router-view>
       </v-container>
     </v-content>
@@ -87,11 +88,13 @@
 
 <script>
 import SocialBar from './components/SocialBar'
+import TechTree from './components/TechTree'
 
 export default {
   name: 'App',
   components: {
-    SocialBar
+    SocialBar,
+    TechTree
   },
   data () {
     return {
