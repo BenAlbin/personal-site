@@ -50,6 +50,8 @@ export default {
 
 ul
   list-style-type none
+  padding-left 1em
+  line-height 1.5em
 
 li
   list-style-type none

@@ -1,6 +1,8 @@
 import '@babel/polyfill'
 import Vue from 'vue'
-import './plugins/vuetify'
+// import './plugins/vuetify'
+// import './plugins/vuesax'
+import './plugins/buefy'
 import App from './App.vue'
 import '@fortawesome/fontawesome-free/css/all.css'
 

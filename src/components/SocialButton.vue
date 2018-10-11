@@ -1,5 +1,7 @@
 <template lang="pug">
-  v-btn(icon v-bind:href="socialUrl" target="_blank")
+  //- v-btn(icon v-bind:href="socialUrl" target="_blank")
+  //-   i.social-icon.fab(:class="'fa-'.concat(socialIcon)")
+  a(href="socialUrl" target="_blank")
     i.social-icon.fab(:class="'fa-'.concat(socialIcon)")
 </template>
 
@@ -22,4 +24,6 @@ export default {
 <style lang="stylus">
 .social-icon
   font-size 32px
+  padding-left 10px
+  padding-right 10px
 </style>
