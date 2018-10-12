@@ -1,18 +1,20 @@
 <template lang="pug">
   .container
     .grid-container
-      tech-tree.tech-tree
+      q-tech-tree.tech-tree
       tech-desc.tech-desc
 </template>
 
 <script>
 import TechTree from '@/components/TechTree.vue'
 import TechDesc from '@/components/TechDescription.vue'
+import QTechTree from '@/components/QTechTree.vue'
 
 export default {
   components: {
     TechTree,
-    TechDesc
+    TechDesc,
+    QTechTree
   }
 }
 </script>

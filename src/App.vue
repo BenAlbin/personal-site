@@ -2,7 +2,8 @@
   #app
     app-header
     .section.is-medium
-      router-view
+      .container.is_fluid
+        router-view
     app-footer
 </template>
 
@@ -26,3 +27,6 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+</style>
