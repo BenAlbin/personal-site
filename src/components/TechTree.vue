@@ -1,9 +1,10 @@
-<template>
-  <tree-item
-    class="item"
-    :model="techStackItems"
-  >
-  </tree-item>
+<template lang="pug">
+  div
+    tree-item(
+      v-for="(model, index) in techStackItems"
+      class="item"
+      :model="model"
+      )
 </template>
 
 <script>
@@ -17,10 +18,7 @@ export default {
   },
   data () {
     return {
-      techStackItems: {
-        name: "Technologies",
-        children: TechStackData
-      }
+      techStackItems: TechStackData
     }
   }
 }

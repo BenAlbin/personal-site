@@ -1,21 +1,14 @@
-<template>
-  <li>
-    <div
-      @click="toggle"
-    >
-      <span v-if="isFolder" class="tree-icon">{{ open ? '˅ ' : '> '}}</span>
-      {{ model.name }}
-    </div>
-    <ul v-show="open" v-if="isFolder">
-      <tree-item
+<template lang="pug">
+  li
+    div(@click="toggle")
+      span(v-if="isFolder" class="tree-icon") {{ open ? '˅ ' : '> '}}
+      span {{ model.name }}
+    ul(v-show="open" v-if="isFolder")
+      tree-item(
         class="item"
         v-for="(model, index) in model.children"
         :key="index"
-        :model="model"
-      >
-      </tree-item>
-    </ul>
-  </li>
+        :model="model")
 </template>
 
 <script>
@@ -39,6 +32,7 @@ export default {
   },
   methods: {
     toggle () {
+      this.$store.dispatch('setTechItem', this.model)
       if (this.isFolder) {
         this.open = !this.open
       }
@@ -47,17 +41,18 @@ export default {
 }
 </script>
 
-<style>
-.bold {
-  font-weight: bold;
-}
-.tree-icon {
-  font-weight: bold;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  list-style-type: none;
-}
+<style scoped lang="stylus">
+.bold
+  font-weight bold
+
+.tree-icon
+  font-weight bold
+
+ul
+  list-style-type none
+  padding-left 1em
+  line-height 1.5em
+
+li
+  list-style-type none
 </style>
