@@ -1,10 +1,12 @@
 <template lang="pug">
   div
     q-tree(
-      :nodes="techStackItems"
+      :nodes="treeItems"
       node-key="id"
       :selected.sync="selectedId"
+      handler="(node) => selectNode(node)"
       default-expand-all
+      ref="qTechTree"
     )
       div(
         slot="default-header"
@@ -18,17 +20,15 @@
 
 <script>
 import TechStackData from '@/data/TechnologyStack.json'
-import TreeItem from './TreeItem.vue'
 
 export default {
   name: "q-tech-tree",
   components: {
-    TreeItem
   },
   data () {
     return {
       selectedId: null,
-      techStackItems: TechStackData,
+      treeItems: TechStackData,
       selected: {
         description: null,
         note: null
@@ -37,17 +37,6 @@ export default {
   },
   methods: {
     selectNode (node) {
-      let selected = {
-        name: node.name,
-        description: node.description,
-        note: node.note
-      }
-      this.$store.dispatch('setTechItem', selected)
-    }
-  },
-  watch: {
-    selectedId (val) {
-      node = getNodeByKey(val)
       let selected = {
         name: node.name,
         description: node.description,

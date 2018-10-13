@@ -1,11 +1,10 @@
 <template lang="pug">
   div(v-if="selectedTech")
-    .description
-      header Description:
-      div {{ selectedTech.description }}
-    .notes
-      header Note:
-      div {{ selectedTech.personal_note }}
+    q-card
+      q-card-title {{ selectedTech.name }}
+        span(slot="subtitle") {{ selectedTech.description }}
+      q-card-main
+       p {{ selectedTech.note }}
 </template>
 
 <script>
