@@ -1,7 +1,8 @@
 <template lang="pug">
-  .grid-container
+  .flex-container
     q-tech-tree.tech-tree
-    tech-desc.tech-desc
+    div.description-container
+      tech-desc.tech-desc
 </template>
 
 <script>
@@ -19,19 +20,24 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.grid-container
-  display grid
-  grid-template-columns 200px 500px
+.flex-container
+  display flex
+  flex-direction row
+  flex-wrap nowrap
   justify-content center
   align-items start
-  grid-column-gap 10px
 
   .tech-tree
-    grid-row-start 1
-    grid-column-start 1
-    grid-column-end 2
+    width 200px
+    margin-left 5px
+    margin-right 5px
 
-  .tech-desc
-    grid-row-start 1
-    grid-column-start 2
+  .description-container
+    width 500px
+    margin-left 5px
+    margin-right 5px
+
+    .tech-desc
+      width 500px
+      position fixed
 </style>
