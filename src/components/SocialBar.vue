@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.container
+  div(class="container row no-wrap")
     social-button(
       v-for="(social, index) in $options.socials"
       :socialUrl="social.socialUrl"

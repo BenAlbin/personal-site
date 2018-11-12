@@ -1,4 +1,4 @@
-# balbin
+# My Personal Website
 
 ## Project setup
 ```

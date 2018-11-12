@@ -1,10 +1,11 @@
 <template lang="pug">
   footer(
-    class="footer bg-dark"
+    class="footer row justify-center no-wrap bg-dark"
   )
-    div(class="column")
+    .col-3
+    div(class="column q-ml-auto")
       p(
-        class="row justify-center"
+        class="row no-wrap justify-center"
       )
         social-bar(
           class="bg-faded"
@@ -12,6 +13,14 @@
       p(
         class="row justify-center"
       ) &copy; 2018
+    a(
+      href="https://buttercms.com"
+      class="q-ml-auto col-3"
+    )
+      img(
+        src="https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo"
+        class="full-width"
+      )
 </template>
 
 <script>
@@ -26,11 +35,4 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.footer
-  bottom 0
-  width 100%
-  height fit-content
-  padding 0px
-p
-  margin-bottom 0px
 </style>
