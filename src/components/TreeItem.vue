@@ -8,7 +8,8 @@
         class="item"
         v-for="(model, index) in model.children"
         :key="index"
-        :model="model")
+        :model="model"
+      )
 </template>
 
 <script>

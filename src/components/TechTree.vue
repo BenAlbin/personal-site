@@ -4,7 +4,8 @@
       v-for="(model, index) in techStackItems"
       class="item"
       :model="model"
-      )
+      key="id"
+    )
 </template>
 
 <script>

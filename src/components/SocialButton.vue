@@ -1,7 +1,7 @@
 <template lang="pug">
   //- v-btn(icon v-bind:href="socialUrl" target="_blank")
   //-   i.social-icon.fab(:class="'fa-'.concat(socialIcon)")
-  a(href="socialUrl" target="_blank")
+  a(:href="socialUrl" target="_blank")
     i.social-icon.fab(:class="'fa-'.concat(socialIcon)")
 </template>
 

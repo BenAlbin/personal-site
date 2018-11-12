@@ -2,9 +2,10 @@
   div.container
     social-button(
       v-for="(social, index) in $options.socials"
-      v-bind:socialUrl="social.socialUrl"
-      v-bind:socialIcon="social.socialIcon"
-      v-bind:key="index")
+      :socialUrl="social.socialUrl"
+      :socialIcon="social.socialIcon"
+      :key="index"
+    )
 </template>
 
 <script>
@@ -25,6 +26,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+@import '~variables'
 .container
   width fit-content
   height fit-content
