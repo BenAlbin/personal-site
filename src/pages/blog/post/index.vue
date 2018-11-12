@@ -1,11 +1,16 @@
 <template lang="pug">
   q-page(padding)
-    .blog-post
-      h1 {{ post.data.title }}
-      h4 {{ post.data.author.first_name }} {{ post.data.author.last_name }}
+    div(class="row justify-center")
+      .col-2
       div(
-        v-html="post.data.body"
+        class="col"
       )
+        h1 {{ post.data.title }}
+        h4 {{ post.data.author.first_name }} {{ post.data.author.last_name }}
+        div(
+          v-html="post.data.body"
+        )
+      .col-2
 </template>
 
 <script>
@@ -32,6 +37,6 @@
 </script>
 
 <style lang="stylus">
-.blog_post
-  width 50%
+img
+  max-width 100%
 </style>
