@@ -1,8 +1,9 @@
 <template lang="pug">
-  .flex-container
-    q-tech-tree.tech-tree
-    div.description-container
-      tech-desc.tech-desc
+  q-page(padding)
+    .flex-container
+      q-tech-tree.tech-tree
+      div.description-container
+        tech-desc.tech-desc
 </template>
 
 <script>
