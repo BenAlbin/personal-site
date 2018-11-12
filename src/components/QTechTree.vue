@@ -14,7 +14,7 @@
         @click="selectNode(prop.node)"
       )
         div(
-          class="text-weight-bold text-primary"
+          class="text-weight-bold text-grey-10"
         ) {{ prop.node.name }}
 </template>
 
@@ -28,21 +28,23 @@ export default {
   data () {
     return {
       selectedId: null,
-      treeItems: TechStackData,
-      selected: {
-        description: null,
-        note: null
-      }
+      treeItems: TechStackData
     }
   },
-  methods: {
-    selectNode (node) {
-      let selected = {
-        name: node.name,
-        description: node.description,
-        note: node.note
+  watch: {
+    selectedId (val) {
+      if (val) {
+        let { name, logo_url, description, note } = this.$refs.qTechTree.getNodeByKey(val)
+        let selected = {
+          name: name,
+          logo_url: logo_url,
+          description: description,
+          note: note
+        }
+        this.$store.dispatch('setTechItem', selected)
+      } else {
+        this.$store.dispatch('setTechItem', null)
       }
-      this.$store.dispatch('setTechItem', selected)
     }
   }
 }
