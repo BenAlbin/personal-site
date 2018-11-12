@@ -1,5 +1,9 @@
 # My Personal Website
 
+Currently hosted at benalbin.netlify.com. 
+
+Still need to add in a lot of the content, and make the blog look pretty.
+
 ## Project setup
 ```
 npm install
