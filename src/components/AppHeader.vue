@@ -1,12 +1,28 @@
 <template lang="pug">
-  nav(
-    role="navigation"
-    class="navbar is-dark"
+  q-toolbar(
+    color="dark"
+    class="row no-wrap q-py-none"
+  )
+    .col-3
+    q-toolbar-title(
+      shrink
+    ) Ben Albin
+    .col
+    q-tabs(
+      color="dark"
+      align="center"
     )
-    div.navbar-brand
-      div.navbar-item Ben Albin
-    div.navbar-menu
-      a.navbar-item Home
+      q-route-tab(
+        slot="title"
+        to="/"
+        label="Home"
+      )
+      q-route-tab(
+        slot="title"
+        to="/blog"
+        label="Blog"
+      )
+    .col-3
 </template>
 
 <script>
@@ -21,11 +37,4 @@ export default {
 </script>
 
 <style lang="stylus">
-.navbar-brand
-  margin-left 30%
-  font-size 32px
-.navbar-menu
-  margin-left 5%
-.navbar-item
-  color white
 </style>

@@ -1,9 +1,17 @@
 <template lang="pug">
-  footer.footer
-    div(class="content has-text-centered")
-      p
-        social-bar
-      p &copy; 2018
+  footer(
+    class="footer bg-dark"
+  )
+    div(class="column")
+      p(
+        class="row justify-center"
+      )
+        social-bar(
+          class="bg-faded"
+        )
+      p(
+        class="row justify-center"
+      ) &copy; 2018
 </template>
 
 <script>
@@ -19,7 +27,6 @@ export default {
 
 <style scoped lang="stylus">
 .footer
-  position fixed
   bottom 0
   width 100%
   height fit-content

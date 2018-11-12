@@ -1,10 +1,14 @@
 <template lang="pug">
-  #app
-    app-header
-    .section.is-medium
-      .container.is_fluid
+  .q-app
+    q-layout(
+      view="hhh lpr fff"
+    )
+      q-layout-header
+        app-header
+      q-page-container
         router-view
-    app-footer
+      q-layout-footer
+        app-footer
 </template>
 
 <script>
@@ -29,4 +33,6 @@ export default {
 </script>
 
 <style lang="stylus">
+.section.is-medium
+  padding-top 2rem
 </style>
