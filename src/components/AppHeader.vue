@@ -19,6 +19,11 @@
       )
       q-route-tab(
         slot="title"
+        to="/skills"
+        label="Skills"
+      )
+      q-route-tab(
+        slot="title"
         to="/blog"
         label="Blog"
       )

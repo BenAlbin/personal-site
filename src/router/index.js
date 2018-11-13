@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '@/pages/Home.vue'
 import Blog from '@/pages/blog/index.vue'
 import BlogPost from '@/pages/blog/post/index.vue'
+import SkillsView from '@/pages/skillsView/index.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,11 @@ const routes = [
     path: '/',
     name: 'home', 
     component: Home 
+  },
+  {
+    path: '/skills',
+    name: 'skills-view',
+    component: SkillsView
   },
   { 
     path: '/blog',
