@@ -1,23 +1,20 @@
 [
   {
     "id": 100,
-    "header": "generic",
     "name": "Elixir",
     "logo_url": "",
-    "note": "Elixir is an incredibly exciting language to use. I was initially drawn to the language for the very terse but descriptive nature of functional languages. While I haven't personally had a need for the performance gains that Elixir can very easily provide, the productivity and Ruby on Rails influenced ease of development has been greatly appreciated.",
-    "description": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications.",
+    "note": "",
+    "description": "",
     "children": [
       {
         "id": 101,
-        "header": "generic",
         "name": "Phoenix",
         "logo_url": "",
         "note": "",
-        "description": "A productive web framework that does not compromise speed and maintainability."
+        "description": ""
       },
       {
         "id": 102,
-        "header": "generic",
         "name": "ExUnit",
         "logo_url": "",
         "note": "",
@@ -25,11 +22,17 @@
       },
       {
         "id": 103,
-        "header": "generic",
         "name": "Absinthe",
         "logo_url": "",
         "note": "",
-        "description": "GraphQL implementation for Elixir"
+        "description": ""
+      },
+      {
+        "id": 104,
+        "name": "Ecto",
+        "logo_url": "",
+        "note": "",
+        "description": ""
       }
     ]
   },
@@ -43,6 +46,96 @@
       {
         "id": 201,
         "name": "Keras",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      },
+      {
+        "id": 202,
+        "name": "Pandas/Numpy",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Javascript",
+    "logo_url": "",
+    "note": "",
+    "description": "",
+    "children": [
+      {
+        "id": 301,
+        "name": "Vue.JS",
+        "logo_url": "",
+        "note": "",
+        "description": "",
+        "children": [
+          {
+            "id": 3011,
+            "name": "Vuetify",
+            "logo_url": "",
+            "note": "",
+            "description": ""
+          },
+          {
+            "id": 3012,
+            "name": "Quasar",
+            "logo_url": "",
+            "note": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 302,
+        "name": "Apollo Client",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Other",
+    "logo_url": "",
+    "note": "",
+    "description": "",
+    "children": [
+      {
+        "id": 401,
+        "name": "GraphQL",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      },
+      {
+        "id": 402,
+        "name": "PostgreSQL",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      },
+      {
+        "id": 403,
+        "name": "Webpack",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      },
+      {
+        "id": 404,
+        "name": "CSS/Stylus",
+        "logo_url": "",
+        "note": "",
+        "description": ""
+      },
+      {
+        "id": 405,
+        "name": "HTML/Pug",
         "logo_url": "",
         "note": "",
         "description": ""
