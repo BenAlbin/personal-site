@@ -1,16 +1,26 @@
 <template lang='pug'>
   q-page(padding)
-    .blog-home
-      h1 {{ page_title }}
-      div(
-        v-for="(post, index) in posts"
-        :key="post.slug + '_' + index"
-      ) 
-        router-link(
-          :to="'/blog/' + post.slug"
+    div(class="row justify-center")
+      .col-2
+      .blog-home.col
+        h3(
+          class="q-my-md"
+        ) {{ page_title }}
+        div(
+          class="row justify-between"
         )
-          h2 {{ post.title }}
-          p {{ post.summary }}
+          q-card(
+            class="q-mx-none"
+            inline
+            style="width: 32%; height: 300px"
+            @click.native="$router.push({ path: '/blog/' + post.slug })"
+            v-for="(post, index) in posts"
+            :key="post.slug + '_' + index"
+          )
+            q-card-title {{ post.title }}
+            q-card-separator
+            q-card-main {{ post.summary }}
+      .col-2
 </template>
 
 <script>
@@ -19,7 +29,7 @@
     name: 'blog-home',
     data() {
       return {
-        page_title: 'blog',
+        page_title: 'A few quick blog posts',
         posts: []
       }
     },
