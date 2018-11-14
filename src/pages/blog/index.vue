@@ -10,7 +10,7 @@
           class="row justify-between"
         )
           q-card(
-            class="q-mx-none"
+            class="q-mx-none q-mb-md"
             inline
             style="width: 32%; height: 300px"
             @click.native="$router.push({ path: '/blog/' + post.slug })"
